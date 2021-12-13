@@ -1,0 +1,17 @@
+props
+
+Ok , assume that we have many components and we need to share specific data between them , so we can pass variables from the parent and child , vice versa , to access this variables value and also we can change the value through other components by passing the setters .
+
+Example , we have a list of cars in a screen so when the user tap on specific car we should take the selected car to the details screen by passing selected car id as a prop
+
+
+Why not redux ?
+
+We use redux to avoid props drilling , like if we have a lot of data need to be public cause im gonna use it in alot of screen like username or address or whatever need to be public .
+So if we used props we gonna pass props o many components and that's not the best practice , this called props drilling and lead to performance leek .
+So the best solution in this case is redux cause it takes the data in a layer outside your app and you can acess it anywhere using useSelector hook , but you shouldn't overuse redux
+use it only when you are sure that data will be needed in many screens
+
+and also you can use useContext instead of redux in small projects , there is no big difference between redux and useContext
+
+

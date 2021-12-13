@@ -1,0 +1,11 @@
+Sesuatu yang harus dihindari dalam React
+
+props drilling
+
+Token on Local Storage
+
+naming space
+
+light IDE
+
+too much caffeine
